@@ -1,0 +1,20 @@
+<!-- <p>prc works!</p> -->
+<h1 [textContent]="parv"></h1>
+<h1>{{user.name}}</h1>
+
+<!-- <input type="email" [value]="user.email">  -->
+<input type="email" value={{user.email}}>     // alternative of property binding using interpolation
+<!-- <p>{{user.email}}</p> -->
+<button (click)="logout()">Log Out</button>
+
+<!-- <input type="email" [(ngModel)]="user.email">  -->
+<!-- <p>{{user.email}}</p> -->
+
+<!-- // Structural direectives -->
+
+<li *ngFor = "let use of userar"> 
+    {{use}}
+</li>
+
+
+<p *ngIf="user.age > 18">You are not eligible for student pass!</p>
